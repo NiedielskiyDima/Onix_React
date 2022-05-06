@@ -1,7 +1,15 @@
 import './App.css';
 import './images/icon_interior.png';
+import React from 'react';
+import './index.js';
+
+
+
 
 function App() {
+    
+    
+    
   return (
     <body>
     <div>
@@ -9,7 +17,8 @@ function App() {
         <div id="block_row">
             <div className="header_name">
                 <div className="header_h1">
-                    <h1>Creative</h1>
+
+                    <h1>{this.state.Text}</h1> 
                     <p id="header_p1">Interior design</p>
                 </div>
                 

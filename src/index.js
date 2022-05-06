@@ -9,7 +9,24 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  
 );
+
+
+class Text extends React.Component {
+  constructor(props) {
+      super(props);
+
+      this.state = {Text: "Creative" };
+      
+  }
+  render(){
+    return <h1>{this.state.Text}</h1>;
+    
+  }
+  
+}
+ReactDOM.render(<Text/>, document.getElementById("app"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
